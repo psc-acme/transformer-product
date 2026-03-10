@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/transformer-product",
+    "description": "Package transformer-product for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\TransformerProduct\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "vlucas/phpdotenv": "^5.0",
+        "psr/event-dispatcher": "^1.0",
+        "league/commonmark": "^2.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.0",
+        "phpstan/phpstan": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
